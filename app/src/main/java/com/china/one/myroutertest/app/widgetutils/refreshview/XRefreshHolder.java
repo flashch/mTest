@@ -1,4 +1,4 @@
-package com.china.one.myroutertest.app.refreshview;
+package com.china.one.myroutertest.app.widgetutils.refreshview;
 
 public class XRefreshHolder {
 

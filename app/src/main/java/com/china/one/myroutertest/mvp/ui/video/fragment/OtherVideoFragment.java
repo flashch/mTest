@@ -16,7 +16,7 @@ import android.widget.LinearLayout;
 import com.china.one.common.base.BaseFragment;
 import com.china.one.common.di.component.AppComponent;
 import com.china.one.myroutertest.R;
-import com.china.one.myroutertest.app.refreshview.XRefreshView;
+import com.china.one.myroutertest.app.widgetutils.refreshview.XRefreshView;
 import com.china.one.myroutertest.di.component.DaggerOtherVideoComponent;
 import com.china.one.myroutertest.di.module.OtherVideoModule;
 import com.china.one.myroutertest.mvp.contract.OtherVideoContract;

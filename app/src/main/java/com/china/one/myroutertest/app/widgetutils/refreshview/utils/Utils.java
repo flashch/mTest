@@ -1,4 +1,4 @@
-package com.china.one.myroutertest.app.refreshview.utils;
+package com.china.one.myroutertest.app.widgetutils.refreshview.utils;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,7 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import com.china.one.myroutertest.app.refreshview.recyclerview.BaseRecyclerAdapter;
+import com.china.one.myroutertest.app.widgetutils.refreshview.recyclerview.BaseRecyclerAdapter;
 import java.lang.reflect.Method;
 
 public class Utils {

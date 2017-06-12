@@ -1,4 +1,4 @@
-package com.china.one.myroutertest.app.refreshview.listener;
+package com.china.one.myroutertest.app.widgetutils.refreshview.listener;
 /**
  * 下拉刷新更多的时机
  * @author huxq17@163.com

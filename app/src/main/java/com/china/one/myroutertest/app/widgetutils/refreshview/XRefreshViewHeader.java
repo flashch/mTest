@@ -1,4 +1,4 @@
-package com.china.one.myroutertest.app.refreshview;
+package com.china.one.myroutertest.app.widgetutils.refreshview;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -13,8 +13,8 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.china.one.myroutertest.R;
-import com.china.one.myroutertest.app.refreshview.callback.IHeaderCallBack;
-import com.china.one.myroutertest.app.refreshview.utils.Utils;
+import com.china.one.myroutertest.app.widgetutils.refreshview.callback.IHeaderCallBack;
+import com.china.one.myroutertest.app.widgetutils.refreshview.utils.Utils;
 
 import java.util.Calendar;
 

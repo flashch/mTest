@@ -1,4 +1,4 @@
-package com.china.one.myroutertest.app.refreshview.recyclerview;
+package com.china.one.myroutertest.app.widgetutils.refreshview.recyclerview;
 
 
 import android.content.Context;
@@ -11,9 +11,9 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.FrameLayout;
 import com.china.one.common.utils.LogUtils;
-import com.china.one.myroutertest.app.refreshview.XRefreshView;
-import com.china.one.myroutertest.app.refreshview.callback.IFooterCallBack;
-import com.china.one.myroutertest.app.refreshview.utils.Utils;
+import com.china.one.myroutertest.app.widgetutils.refreshview.XRefreshView;
+import com.china.one.myroutertest.app.widgetutils.refreshview.callback.IFooterCallBack;
+import com.china.one.myroutertest.app.widgetutils.refreshview.utils.Utils;
 import java.util.Collections;
 import java.util.List;
 

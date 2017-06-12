@@ -1,7 +1,7 @@
-package com.china.one.myroutertest.app.refreshview.recyclerview;
+package com.china.one.myroutertest.app.widgetutils.refreshview.recyclerview;
 
 import android.support.v7.widget.RecyclerView;
-import com.china.one.myroutertest.app.refreshview.XRefreshView;
+import com.china.one.myroutertest.app.widgetutils.refreshview.XRefreshView;
 
 /**
  *  作者：gaoyin

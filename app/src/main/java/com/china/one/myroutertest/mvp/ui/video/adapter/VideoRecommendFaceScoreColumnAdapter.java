@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.china.one.common.utils.UiUtils;
 import com.china.one.myroutertest.R;
-import com.china.one.myroutertest.app.refreshview.recyclerview.BaseRecyclerAdapter;
+import com.china.one.myroutertest.app.widgetutils.refreshview.recyclerview.BaseRecyclerAdapter;
 import com.china.one.myroutertest.mvp.model.entity.VideoFaceScoreColumn;
 
 import java.util.ArrayList;

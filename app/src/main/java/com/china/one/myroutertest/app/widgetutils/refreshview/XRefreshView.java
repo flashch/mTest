@@ -1,4 +1,4 @@
-package com.china.one.myroutertest.app.refreshview;
+package com.china.one.myroutertest.app.widgetutils.refreshview;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -21,11 +21,11 @@ import android.widget.Scroller;
 
 import com.china.one.common.utils.LogUtils;
 import com.china.one.myroutertest.R;
-import com.china.one.myroutertest.app.refreshview.callback.IFooterCallBack;
-import com.china.one.myroutertest.app.refreshview.callback.IHeaderCallBack;
-import com.china.one.myroutertest.app.refreshview.listener.OnBottomLoadMoreTime;
-import com.china.one.myroutertest.app.refreshview.listener.OnTopRefreshTime;
-import com.china.one.myroutertest.app.refreshview.utils.Utils;
+import com.china.one.myroutertest.app.widgetutils.refreshview.callback.IFooterCallBack;
+import com.china.one.myroutertest.app.widgetutils.refreshview.callback.IHeaderCallBack;
+import com.china.one.myroutertest.app.widgetutils.refreshview.listener.OnBottomLoadMoreTime;
+import com.china.one.myroutertest.app.widgetutils.refreshview.listener.OnTopRefreshTime;
+import com.china.one.myroutertest.app.widgetutils.refreshview.utils.Utils;
 
 import java.util.Calendar;
 import java.util.concurrent.CopyOnWriteArrayList;

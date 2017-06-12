@@ -15,7 +15,7 @@ import com.china.one.common.di.component.AppComponent;
 import com.china.one.common.utils.UiUtils;
 import com.china.one.myroutertest.R;
 import com.china.one.myroutertest.app.GlideImageLoader;
-import com.china.one.myroutertest.app.refreshview.XRefreshView;
+import com.china.one.myroutertest.app.widgetutils.refreshview.XRefreshView;
 import com.china.one.myroutertest.di.component.DaggerVideoRecommendComponent;
 import com.china.one.myroutertest.di.module.VideoRecommendModule;
 import com.china.one.myroutertest.mvp.contract.VideoRecommendContract;

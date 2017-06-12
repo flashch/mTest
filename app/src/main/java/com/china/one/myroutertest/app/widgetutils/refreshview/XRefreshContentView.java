@@ -1,4 +1,4 @@
-package com.china.one.myroutertest.app.refreshview;
+package com.china.one.myroutertest.app.widgetutils.refreshview;
 
 import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.GridLayoutManager;
@@ -14,12 +14,12 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.ScrollView;
 
 import com.china.one.common.utils.LogUtils;
-import com.china.one.myroutertest.app.refreshview.callback.IFooterCallBack;
-import com.china.one.myroutertest.app.refreshview.listener.OnBottomLoadMoreTime;
-import com.china.one.myroutertest.app.refreshview.listener.OnTopRefreshTime;
-import com.china.one.myroutertest.app.refreshview.recyclerview.BaseRecyclerAdapter;
-import com.china.one.myroutertest.app.refreshview.recyclerview.XSpanSizeLookup;
-import com.china.one.myroutertest.app.refreshview.utils.Utils;
+import com.china.one.myroutertest.app.widgetutils.refreshview.callback.IFooterCallBack;
+import com.china.one.myroutertest.app.widgetutils.refreshview.listener.OnBottomLoadMoreTime;
+import com.china.one.myroutertest.app.widgetutils.refreshview.listener.OnTopRefreshTime;
+import com.china.one.myroutertest.app.widgetutils.refreshview.recyclerview.BaseRecyclerAdapter;
+import com.china.one.myroutertest.app.widgetutils.refreshview.recyclerview.XSpanSizeLookup;
+import com.china.one.myroutertest.app.widgetutils.refreshview.utils.Utils;
 
 
 public class XRefreshContentView implements OnScrollListener, OnTopRefreshTime, OnBottomLoadMoreTime {

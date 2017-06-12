@@ -1,4 +1,4 @@
-package com.china.one.myroutertest.mvp.model;
+package com.china.one.myroutertest.mvp.model.entity;
 
 import com.flyco.tablayout.listener.CustomTabEntity;
 

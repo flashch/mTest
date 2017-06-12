@@ -1,6 +1,7 @@
-package com.china.one.myroutertest.app.refreshview;
+package com.china.one.myroutertest.app.widgetutils.refreshview.recyclerview;
 
 import android.content.Context;
+import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,30 +9,41 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.china.one.myroutertest.R;
-import com.china.one.myroutertest.app.refreshview.callback.IFooterCallBack;
+import com.china.one.myroutertest.app.widgetutils.refreshview.XRefreshView;
+import com.china.one.myroutertest.app.widgetutils.refreshview.callback.IFooterCallBack;
+import com.china.one.myroutertest.app.widgetutils.refreshview.utils.Utils;
 
-
-public class XRefreshViewFooter extends LinearLayout implements IFooterCallBack {
+public class CustomerFooter extends LinearLayout implements IFooterCallBack {
     private Context mContext;
 
     private View mContentView;
     private View mProgressBar;
     private TextView mHintView;
     private TextView mClickView;
-    private boolean showing = true;
+    private boolean showing = false;
 
-    public XRefreshViewFooter(Context context) {
+    public CustomerFooter(Context context) {
         super(context);
         initView(context);
     }
 
-    public XRefreshViewFooter(Context context, AttributeSet attrs) {
+    public CustomerFooter(Context context, AttributeSet attrs) {
         super(context, attrs);
         initView(context);
     }
 
+    private RecyclerView recyclerView;
+
+    public void setRecyclerView(RecyclerView recyclerView) {
+        this.recyclerView = recyclerView;
+    }
+
     @Override
     public void callWhenNotAutoLoadMore(final XRefreshView xRefreshView) {
+        if (recyclerView != null) {
+            //当数据不满一屏时不显示点击加载更多
+            show(Utils.isRecyclerViewFullscreen(recyclerView));
+        }
         mClickView.setText(R.string.xrefreshview_footer_hint_click);
         mClickView.setOnClickListener(new OnClickListener() {
 
@@ -46,9 +58,8 @@ public class XRefreshViewFooter extends LinearLayout implements IFooterCallBack 
     public void onStateReady() {
         mHintView.setVisibility(View.GONE);
         mProgressBar.setVisibility(View.GONE);
-        mClickView.setText(R.string.xrefreshview_footer_hint_click);
         mClickView.setVisibility(View.VISIBLE);
-//        show(true);
+        mClickView.setText(R.string.xrefreshview_footer_hint_click);
     }
 
     @Override
@@ -63,8 +74,8 @@ public class XRefreshViewFooter extends LinearLayout implements IFooterCallBack 
     public void onReleaseToLoadMore() {
         mHintView.setVisibility(View.GONE);
         mProgressBar.setVisibility(View.GONE);
-        mClickView.setText(R.string.xrefreshview_footer_hint_release);
         mClickView.setVisibility(View.VISIBLE);
+        mClickView.setText(R.string.xrefreshview_footer_hint_release);
     }
 
     @Override
@@ -85,21 +96,16 @@ public class XRefreshViewFooter extends LinearLayout implements IFooterCallBack 
         mHintView.setText(R.string.xrefreshview_footer_hint_complete);
         mHintView.setVisibility(View.VISIBLE);
         mProgressBar.setVisibility(View.GONE);
-        mClickView.setVisibility(View.GONE);
+        show(true);
     }
 
     @Override
-    public void show(final boolean show) {
-        if (show == showing) {
-            return;
-        }
+    public void show(boolean show) {
         showing = show;
         LayoutParams lp = (LayoutParams) mContentView
                 .getLayoutParams();
         lp.height = show ? LayoutParams.WRAP_CONTENT : 0;
         mContentView.setLayoutParams(lp);
-//        setVisibility(show?VISIBLE:GONE);
-
     }
 
     @Override

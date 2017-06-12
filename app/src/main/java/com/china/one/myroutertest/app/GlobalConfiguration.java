@@ -13,7 +13,6 @@ import com.china.one.myroutertest.mvp.model.api.Api;
 import com.china.one.myroutertest.mvp.model.api.cache.CommonCache;
 import com.china.one.myroutertest.mvp.model.api.service.CommonService;
 import com.china.one.myroutertest.mvp.model.api.service.LivingService;
-import com.china.one.myroutertest.mvp.model.api.service.UserService;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -88,7 +87,7 @@ public class GlobalConfiguration implements ConfigModule {
 
     @Override
     public void registerComponents(Context context, IRepositoryManager repositoryManager) {
-        repositoryManager.injectRetrofitService(CommonService.class, UserService.class, LivingService.class);
+        repositoryManager.injectRetrofitService(CommonService.class, LivingService.class);
         repositoryManager.injectCacheService(CommonCache.class);
     }
 }

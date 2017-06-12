@@ -1,6 +1,6 @@
-package com.china.one.myroutertest.app.refreshview.callback;
+package com.china.one.myroutertest.app.widgetutils.refreshview.callback;
 
-import com.china.one.myroutertest.app.refreshview.XRefreshView;
+import com.china.one.myroutertest.app.widgetutils.refreshview.XRefreshView;
 
 public interface IFooterCallBack {
     /**

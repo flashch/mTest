@@ -1,4 +1,4 @@
-package com.china.one.myroutertest.app.utils;
+package com.china.one.myroutertest.app.widgetutils;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

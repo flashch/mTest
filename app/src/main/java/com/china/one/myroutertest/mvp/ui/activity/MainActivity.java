@@ -7,7 +7,7 @@ import android.view.View;
 import com.china.one.common.base.BaseActivity;
 import com.china.one.common.di.component.AppComponent;
 import com.china.one.myroutertest.R;
-import com.china.one.myroutertest.mvp.model.TabEntity;
+import com.china.one.myroutertest.mvp.model.entity.TabEntity;
 import com.china.one.myroutertest.mvp.ui.fragment.Test1Fragment;
 import com.china.one.myroutertest.mvp.ui.fragment.Test2Fragment;
 import com.china.one.myroutertest.mvp.ui.fragment.Test3Fragment;
