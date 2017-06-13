@@ -72,7 +72,7 @@ dependencies {
     if (isBuildModule.toBoolean()) {
         compile project(':common')
     } else {
-        //compile project(':test-module')
+        compile project(':login-module')
         compile project(':setting-module')
     }
     //view

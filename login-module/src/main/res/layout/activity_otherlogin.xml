@@ -5,7 +5,7 @@
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".other.OtherLoginActivity">
+    tools:context="com.china.one.login.other.OtherLoginActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
